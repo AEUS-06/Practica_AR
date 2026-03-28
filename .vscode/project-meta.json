@@ -1,0 +1,18 @@
+{
+  "projectName": "AR Turbo Garage",
+  "practice": "Unidad 2 - Desarrollo de Aplicaciones de Realidad Aumentada Movil",
+  "unit": "Unidad 2",
+  "topics": [
+    "2.1 Plataformas de desarrollo para RA movil",
+    "2.2 Creacion de experiencias de RA en dispositivos moviles",
+    "2.3 Deteccion de marcadores y seguimiento de objetos",
+    "2.4 Interaccion y experiencia de usuario en RA movil",
+    "2.5 Pruebas y optimizacion de aplicaciones de RA"
+  ],
+  "engine": "Unity 6.3 LTS",
+  "arFramework": "AR Foundation 6.1",
+  "platform": "Android ARCore",
+  "projectType": "Entretenimiento",
+  "coreExperience": "Carro AR personalizable y controlable",
+  "learningGoal": "Construir una experiencia de RA movil que integre deteccion de planos, image tracking, interaccion y optimizacion."
+}
