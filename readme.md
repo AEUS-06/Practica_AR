@@ -1,7 +1,5 @@
 # AR Turbo Garage
 
-Proyecto de práctica para la **Unidad 2: Desarrollo de Aplicaciones de Realidad Aumentada Móvil**.
-
 AR Turbo Garage es una experiencia de entretenimiento en realidad aumentada donde el usuario detecta superficies reales, coloca un carrito 3D en el entorno, personaliza su apariencia con imágenes y lo controla mediante interacción táctil.
 
 ---
@@ -11,7 +9,6 @@ AR Turbo Garage es una experiencia de entretenimiento en realidad aumentada dond
 - [Descripción general](#descripción-general)
 - [Objetivo de la práctica](#objetivo-de-la-práctica)
 - [Competencias desarrolladas](#competencias-desarrolladas)
-- [Temario relacionado](#temario-relacionado)
 - [Características funcionales](#características-funcionales)
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
 - [Plataforma objetivo](#plataforma-objetivo)
@@ -21,7 +18,6 @@ AR Turbo Garage es una experiencia de entretenimiento en realidad aumentada dond
 - [Roadmap de desarrollo](#roadmap-de-desarrollo)
 - [Pruebas y optimización](#pruebas-y-optimización)
 - [Resultados de aprendizaje esperados](#resultados-de-aprendizaje-esperados)
-- [Autoría](#autoría)
 
 ---
 
@@ -50,18 +46,6 @@ Desarrollar una aplicación móvil de realidad aumentada utilizando **Unity 6, A
 - Detección de marcadores y seguimiento de objetos
 - Diseño de interacción y experiencia de usuario
 - Pruebas, profiling y optimización de rendimiento
-
----
-
-## Temario relacionado
-
-### Unidad 2. Desarrollo de Aplicaciones de Realidad Aumentada Móvil
-
-- 2.1 Plataformas de desarrollo para RA móvil
-- 2.2 Creación de experiencias de RA en dispositivos móviles
-- 2.3 Detección de marcadores y seguimiento de objetos
-- 2.4 Interacción y experiencia de usuario en RA móvil
-- 2.5 Pruebas y optimización de aplicaciones de RA
 
 ---
 
