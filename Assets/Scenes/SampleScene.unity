@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969d740e7f9c68e4b850355735949d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlacementController
-  placementPrefab: {fileID: 6876227128924389306, guid: 95931fb257997b841b0ddfb447dc3e7b, type: 3}
+  placementPrefab: {fileID: 2087819317199453240, guid: 154dd44fa27b2944faa6d0b2b496d10a, type: 3}
 --- !u!1 &343054100
 GameObject:
   m_ObjectHideFlags: 0

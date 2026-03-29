@@ -100,3 +100,6 @@ InitTestScene*.unity*
 
 #carpetas
 /Practica_AR_BurstDebugInformation_DoNotShip
+
+/Assets/_Recovery
+*_Recovery.meta
