@@ -335,8 +335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARCameraManager
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
   m_AutoFocus: 1
   m_ImageStabilization: 0
   m_LightEstimation: 0
@@ -414,6 +414,7 @@ GameObject:
   - component: {fileID: 272966848}
   - component: {fileID: 272966847}
   - component: {fileID: 272966846}
+  - component: {fileID: 272966851}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -452,7 +453,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_PlanePrefab: {fileID: 0}
+  m_PlanePrefab: {fileID: 2027030881653943665, guid: 0199621965eb0dc4493277bef5f8f554, type: 3}
   m_DetectionMode: -1
 --- !u!114 &272966848
 MonoBehaviour:
@@ -500,6 +501,19 @@ Transform:
   - {fileID: 910759074}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272966851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272966845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 969d740e7f9c68e4b850355735949d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlacementController
+  placementPrefab: {fileID: 6876227128924389306, guid: 95931fb257997b841b0ddfb447dc3e7b, type: 3}
 --- !u!1 &343054100
 GameObject:
   m_ObjectHideFlags: 0
