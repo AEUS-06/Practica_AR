@@ -15,13 +15,6 @@ public class ARPlacementManager : MonoBehaviour
         _planeManager = GetComponent<ARPlaneManager>();
     }
 
-    public bool HasTrackedPlanes()
-    {
-        foreach (var plane in _planeManager.trackables)
-            if (plane.trackingState == TrackingState.Tracking) return true;
-        return false;
-    }
-
     public bool TryGetPlacementPose(Vector2 screenPoint, out Vector3 position, out Quaternion rotation)
     {
         if (!HasTrackedPlanes() || !_raycastService.TryRaycast(screenPoint, out Pose hitPose))
@@ -32,11 +25,18 @@ public class ARPlacementManager : MonoBehaviour
         }
 
         position = hitPose.position;
-        rotation = GetRotationTowardsCamera(hitPose.position);
+        rotation = ComputeRotationTowardsCamera(hitPose.position);
         return true;
     }
 
-    private Quaternion GetRotationTowardsCamera(Vector3 targetPosition)
+    private bool HasTrackedPlanes()
+    {
+        foreach (var plane in _planeManager.trackables)
+            if (plane.trackingState == TrackingState.Tracking) return true;
+        return false;
+    }
+
+    private Quaternion ComputeRotationTowardsCamera(Vector3 targetPosition)
     {
         Vector3 direction = Camera.main.transform.position - targetPosition;
         direction.y = 0;

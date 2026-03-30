@@ -24,13 +24,6 @@ public class PlacementController : MonoBehaviour
         Vector2 tapPosition = touchscreen.primaryTouch.position.ReadValue();
 
         if (_placementManager.TryGetPlacementPose(tapPosition, out Vector3 position, out Quaternion rotation))
-        {
-            PlacementEvents.OnPlacementConfirmed?.Invoke(position, rotation);
-        }
-    }
-
-    void OnDestroy()
-    {
-        PlacementEvents.OnPlacementConfirmed = null;
+            PlacementEvents.RaiseMovementRequested(position, rotation);
     }
 }

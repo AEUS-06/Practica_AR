@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class ARRaycastService : MonoBehaviour
 {
     private ARRaycastManager _raycastManager;
-    private readonly List<ARRaycastHit> _hits = new List<ARRaycastHit>();
+    private readonly List<ARRaycastHit> _hits = new();
 
     void Awake()
     {
