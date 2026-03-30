@@ -360,7 +360,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -414,6 +414,8 @@ GameObject:
   - component: {fileID: 272966848}
   - component: {fileID: 272966847}
   - component: {fileID: 272966846}
+  - component: {fileID: 272966853}
+  - component: {fileID: 272966852}
   - component: {fileID: 272966851}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
@@ -510,10 +512,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 272966845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969d740e7f9c68e4b850355735949d58, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bf9c4da2c625f4abc45fa3b8d37595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlacementController
-  placementPrefab: {fileID: 2087819317199453240, guid: 154dd44fa27b2944faa6d0b2b496d10a, type: 3}
+--- !u!114 &272966852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272966845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea16dbb0a3d53a449ab64b9f26e18b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARPlacementManager
+--- !u!114 &272966853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272966845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024013dda7ce80646b71cc107b8489c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ARRaycastService
 --- !u!1 &343054100
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423753762}
+  - component: {fileID: 423753763}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -605,6 +631,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423753763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423753761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f00a3c23cf57114d8b2c4e1b48f1b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
+  prefabToSpawn: {fileID: 75266122779353144, guid: 154dd44fa27b2944faa6d0b2b496d10a, type: 3}
 --- !u!1 &910759073
 GameObject:
   m_ObjectHideFlags: 0
